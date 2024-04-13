@@ -17,11 +17,15 @@
 
     display: flex;
     padding: 32px 128px;
-    font-size: 1vwin;
     overflow: hidden;
     position: fixed;
     width: 100%;
     transition: background-color 200ms linear;
+}
+
+.nav-bar .menu{
+
+    display: none;
 }
 
 .nav-bar.scrolled{
@@ -34,7 +38,6 @@
 .nav-bar h1{
 
     margin-right: 64px;
-
 }
 
 .nav-link {
@@ -42,28 +45,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .nav-link li{
 
     list-style: none;
     padding: 0px 32px;
-
 }
 
 .nav-link li a{
 
     text-decoration: none;
     color: #0f0f0f;
-
 }
 
 .nav-link li a:hover, .nav-link li a:active{
 
     text-decoration: underline;
     color: #5A1AC3;
-
 }
 
 /* Body */
@@ -81,11 +80,11 @@
 
 .hero {
 
+    width: 100%;
+    height: auto;
     background-image: url('images/hero-bg-01.png');
     background-size: cover;
     background-attachment: fixed;
-    max-width: 100%;
-    height: auto;
 }
 
 
@@ -118,10 +117,15 @@
 .hero .col-right img{
 
     margin-left: 128px;
-    max-width: 620px;
+    max-width: 70%;
 }
 
     /* Mission */
+
+.mission{
+
+    width: 100%;
+}
 
 .mission .row{
 
@@ -139,7 +143,7 @@
 
 .mission .col-left img{
 
-    max-width: 800px;
+    max-width: 80%;
 }
 
 .mission .row .col-right{
@@ -172,6 +176,7 @@
 .services{
 
     margin: 128px 0px;
+    width: 100%;
 }
 
 
@@ -215,6 +220,7 @@
 .news-letter{
 
     margin-top: 128px;
+    width: 100%;
 }
 
 .news-letter{
@@ -301,7 +307,7 @@
 
 .news-letter .col-right img{
 
-    max-width: 400px;
+    max-width: 80%;
 }
 
 
@@ -312,6 +318,7 @@
 .footer {
 
     height: 30vh;
+    width: 100%;
     background-color: #2F2E41;
     color: #fff;
     padding: 64px 0px;
@@ -376,7 +383,7 @@
 
 .footer .sub-list a{
 
-    font-weight: 00;
+    font-weight: 100;
 }
 
 
