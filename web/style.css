@@ -17,8 +17,18 @@
 
     display: flex;
     padding: 32px 128px;
-    font-size: 16px;
+    font-size: 1vwin;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    transition: background-color 200ms linear;
+}
 
+.nav-bar.scrolled{
+
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .nav-bar h1{
@@ -64,10 +74,20 @@
 .hero .row{
 
     display: flex;
-    height: 80vh;
+    height: 100vh;
     justify-content: center;
     align-items: center;
 }
+
+.hero {
+
+    background-image: url('images/hero-bg-01.png');
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 100%;
+    height: auto;
+}
+
 
 .hero .row .col-left, .hero .row .col-right{
 
@@ -95,24 +115,36 @@
     background-color: #5A1AC3;
 }
 
+.hero .col-right img{
+
+    margin-left: 128px;
+    max-width: 620px;
+}
+
     /* Mission */
 
 .mission .row{
 
     display: flex;
-    height: 50vh;
+    height: 60vh;
     justify-content: center;
     align-items: center;
 }
 
 .mission .row .col-left{
 
-    width: 40%;
+    display: flex;
+    width: 60%;
+}
+
+.mission .col-left img{
+
+    max-width: 800px;
 }
 
 .mission .row .col-right{
 
-    width: 60%;
+    width: 40%;
 }
 
 .mission .col-right h2, .mission .col-right h1{
@@ -137,6 +169,11 @@
 }
 
     /* Services */
+.services{
+
+    margin: 128px 0px;
+}
+
 
 .services .head{
 
@@ -153,6 +190,7 @@
 .services .head h1{
 
     font-size: 32px;
+    margin-bottom: 64px;
 }
 
 .services .body{
@@ -167,12 +205,31 @@
     margin: 0px 32px;
 }
 
+.services .body h2{
+
+    margin-bottom: 32px;
+}
+
     /* News-letter */
+
+.news-letter{
+
+    margin-top: 128px;
+}
+
+.news-letter{
+
+    background-image: url('images/news-letter-bg-01.png');
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 100%;
+    height: auto;
+}
 
 .news-letter .row{
 
     display: flex;
-    height: 40vh;
+    height: 60vh;
 }
 
 .news-letter .col-left{
@@ -183,6 +240,8 @@
 .news-letter .col-right{
 
     width: 40%;
+    display: flex;
+    align-items: center;
 }
 
 .news-letter .col-left{
@@ -212,11 +271,37 @@
     margin-bottom: 24px;
 }
 
+.news-letter .input-container{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
 .news-letter .form-control input{
 
-    width: 60%;
+    width: 100%;
     font-size: 20px;
     padding: 8px 16px;
+    outline: none;
+}
+
+.news-letter .input-container i{
+
+    cursor: pointer;
+    text-align: center;
+    padding:  13.5px;
+    background-color: #5A1AC3;
+    color: #fff;
+}
+
+.news-letter .input-container i:hover{
+    background-color: #1B1464;
+}
+
+.news-letter .col-right img{
+
+    max-width: 400px;
 }
 
 
